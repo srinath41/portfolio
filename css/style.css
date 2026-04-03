@@ -47,7 +47,7 @@ h4 {
     text-transform: capitalize;
     letter-spacing: 2px;
     position: relative;
-    color: #425BB5;
+    color: #ffffff;
     margin-left: 40px;
     font-weight: 700;
 }
@@ -59,10 +59,30 @@ h4:before {
     content: "";
     display: block;
     height: 2px;
-    background: #425BB5;
+    background: #dcdfeb;
     top: 9px;
 }
 
+.sub-heading:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #467998;
+    top: 9px;
+}
+
+.sub-heading {
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    color: #467998;
+    margin-left: 40px;
+    font-weight: 700;
+}
 
 /* General
 ==================================================*/
@@ -128,7 +148,7 @@ body {
     width: 100%;
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite;
-    border: 2px solid #425BB5;
+    border: 2px solid #467998;
     border-top: 2px solid transparent;
     border-radius: 100%
 }
@@ -152,11 +172,13 @@ body {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader:before {
         left: -2px;
         top: -2px;
         border-width: 2px
     }
+
     .preloader>.icon {
         height: 37.5px;
         width: 15.9px;
@@ -172,6 +194,7 @@ body {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader>.icon {
         height: 50px;
         width: 21.2px;
@@ -185,6 +208,7 @@ body {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -196,6 +220,7 @@ body {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -206,6 +231,7 @@ body {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -215,6 +241,7 @@ body {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -255,8 +282,8 @@ nav li a {
 }
 
 .bg-nav {
-    background: #fff;
-    border-bottom: 1px solid #f3f3f3
+    background: #467998;
+    border-bottom: 1px solid #467998
 }
 
 .bg-nav ul {
@@ -269,12 +296,12 @@ a:focus {
 }
 
 a:hover {
-    color: #425BB5;
+    color: #e7eaf7;
     text-decoration: none;
 }
 
 a.active {
-    color: #425BB5;
+    color: #fafbfc;
 }
 
 
@@ -282,7 +309,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
+    background: url(../img/1000635429.jpg.jpeg);
     background-size: auto;
     /* background-size: cover; */
     height: 100vh;
@@ -312,7 +339,7 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 10px solid #425BB5;
+    border: 10px solid #467998;
     width: 400px;
     height: 400px;
     top: 40px;
@@ -338,7 +365,7 @@ a.active {
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
-    color: #425BB5;
+    color: #467998;
     font-size: 16px;
     font-weight: bold
 }
@@ -378,11 +405,11 @@ a.active {
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #425BB5;
+    background-color: #467998;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #425BB5;
+    box-shadow: inset 40em 0 0 0 #467998;
 }
 
 .timeline-event-copy {
@@ -417,7 +444,7 @@ a.active {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: #425BB5;
+    background-color: #467998;
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -439,7 +466,7 @@ a.active {
     font-size: 12px;
     font-weight: bold;
     background-color: black;
-    box-shadow: inset 0 0 0 0em #425BB5;
+    box-shadow: inset 0 0 0 0em #467998;
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
@@ -707,11 +734,11 @@ fieldset {
 }
 
 #success p {
-    color: #425BB5;
+    color: #467998;
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid #425BB5;
+    border: 2px solid #467998;
     margin-top: 10px;
 }
 
@@ -725,7 +752,7 @@ fieldset {
 }
 
 #submit {
-    background-color: #1d1d1d;
+    background-color: #467999;
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
@@ -754,14 +781,15 @@ fieldset {
 }
 
 .social li a:hover {
-    color: #425BB5;
+    color: #467998;
 }
 
-#profilepic{
+#profilepic {
     margin-top: 150px;
     margin-left: 500px;
 }
-.resumediv{ 
+
+.resumediv {
     margin-top: 25px;
     width: 140px;
     height: 40px;
@@ -775,9 +803,9 @@ fieldset {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid rgb(226, 218, 218);
     outline: none;
-  }
+}
 
 
 /* Responsive media queries
@@ -802,13 +830,16 @@ fieldset {
         font-size: 50px;
         line-height: 50px;
     }
+
     #home,
     .disply-table {
         height: 600px;
     }
+
     .about-border {
         width: 265px;
     }
+
     .portfolio .categories-grid .categories ul li {
         list-style: none;
         margin: 10px 0;
@@ -819,87 +850,98 @@ fieldset {
     nav li {
         margin: 6px;
     }
+
     nav li a {
         font-size: 6px;
     }
+
     nav ul {
         padding: 20px 0px;
     }
+
     #home {
         height: 760px;
-    
+
     }
-    #profilepic{
+
+    #profilepic {
         margin: 40px 30px 0px 50px;
         width: 300px;
     }
-    .table-cell{
+
+    .table-cell {
         display: block;
         margin: 120px 30px 0px 24px;
 
     }
-    .table-cell h1{
+
+    .table-cell h1 {
         font-size: 30px;
     }
-    .table-cell h4{
+
+    .table-cell h4 {
         font-size: 20px;
         margin-left: 0px;
     }
-    .resumediv{
+
+    .resumediv {
         margin-top: 0px;
         width: 120px;
     }
 
 }
 
-  .resumediv a{
-    color: black;
+.resumediv a {
+    color: rgb(226, 218, 218);
     text-decoration: none;
-  }
+}
 
 
 .resumediv:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #425BB5;
-  border-radius: 4px;
-  transition: all 0.4s ease;
-  color: #fff;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #dbe1e3;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    color: #fff;
 }
 
-.resumediv:hover a{
-  color: #fff;
+.resumediv:hover a {
+    color: #467998;
 }
+
 .resumediv:hover:after {
-  left: 0;
-  width: 100%;
-}
-.resumediv:active {
-  top: 2px;
+    left: 0;
+    width: 100%;
 }
 
-.Skills{
+.resumediv:active {
+    top: 2px;
+}
+
+.Skills {
     display: block;
     width: 100%;
 }
 
-.Skills .container-skill{
+.Skills .container-skill {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     animation: moveUp 1s ease-in-out;
-    position: relative; /* Ensure the div can be moved */
-    
+    position: relative;
+    /* Ensure the div can be moved */
+
 }
 
-.Skills .container-skill .heading{
+.Skills .container-skill .heading {
     font-size: 42px;
     text-align: center;
     font-weight: 600;
@@ -907,19 +949,19 @@ fieldset {
     color: rgb(242, 243, 244);
 }
 
-.Skills .container-skill .heading h1{
+.Skills .container-skill .heading h1 {
     padding: 0%;
     margin: 0%;
 }
 
-.Skills .container-skill .Text{
+.Skills .container-skill .Text {
     font-size: 18px;
     text-align: center;
     max-width: 500px;
     color: rgb(177, 178, 179);
 }
 
-.Skills .container-skill .mainSkill{
+.Skills .container-skill .mainSkill {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -928,7 +970,10 @@ fieldset {
     justify-content: center;
 }
 
-.Skills .container-skill .mainSkill .front , .back , .datasci, .tools{
+.Skills .container-skill .mainSkill .front,
+.back,
+.datasci,
+.tools {
     width: 100%;
     max-width: 500px;
     background: rgb(255, 255, 255);
@@ -937,7 +982,10 @@ fieldset {
     padding: 18px 36px;
 }
 
-.Skills .container-skill .mainSkill .front h2, .back h2, .datasci h2, .tools h2{
+.Skills .container-skill .mainSkill .front h2,
+.back h2,
+.datasci h2,
+.tools h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0%;
@@ -949,7 +997,7 @@ fieldset {
     text-align: center;
 }
 
-.Skills .container-skill .mainSkill .box{
+.Skills .container-skill .mainSkill .box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -957,7 +1005,10 @@ fieldset {
     margin-bottom: 20px;
 }
 
-.Skills .container-skill .mainSkill .front .frontSkill, .back .backSkill, .datasci .datasciSkill, .tools .toolsSkill{
+.Skills .container-skill .mainSkill .front .frontSkill,
+.back .backSkill,
+.datasci .datasciSkill,
+.tools .toolsSkill {
     font-size: 14px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -971,22 +1022,22 @@ fieldset {
     transition: all 0.3s ease;
 }
 
-.Skills .container-skill .mainSkill .front .box img{
+.Skills .container-skill .mainSkill .front .box img {
     width: 30px;
     height: 30px;
 }
 
-.Skills .container-skill .mainSkill .back .box img{
+.Skills .container-skill .mainSkill .back .box img {
     width: 30px;
     height: 30px;
 }
 
-.Skills .container-skill .mainSkill .datasci .box img{
+.Skills .container-skill .mainSkill .datasci .box img {
     width: 30px;
     height: 30px;
 }
 
-.Skills .container-skill .mainSkill .tools .box img{
+.Skills .container-skill .mainSkill .tools .box img {
     width: 30px;
     height: 30px;
 }
@@ -997,49 +1048,51 @@ fieldset {
     from {
         transform: translateY(100%);
     }
+
     to {
         transform: translateY(0);
     }
 }
 
-#skill-container{
+#skill-container {
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
 
-#education{
+#education {
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
-#projects{
+#projects {
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
-#experience{
+#experience {
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
 
 
-#herobtn{
+#herobtn {
     /* display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 0px; */
     display: flex;
 }
 
-#githubdiv{
+#githubdiv {
     margin-left: 30px;
 }
 
 
-.Skills .container-skill .mainSkill .front .frontSkill:hover, .back .backSkill:hover, .datasci .datasciSkill:hover, .tools .toolsSkill:hover{
+.Skills .container-skill .mainSkill .front .frontSkill:hover,
+.back .backSkill:hover,
+.datasci .datasciSkill:hover,
+.tools .toolsSkill:hover {
     transform: translateY(-7px);
     transition: all 0.3s ease;
 }
-
-
