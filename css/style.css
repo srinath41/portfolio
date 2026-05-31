@@ -655,6 +655,414 @@ a.active {
     line-height: 50px;
 }
 
+/* ================================================================
+   PORTFOLIO ADDITIONS — paste at the END of css/style.css
+   ================================================================ */
+
+.hero-summary {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+    margin: 8px 0 18px 0;
+}
+
+.cert-achievement {
+    font-size: 15px;
+    color: #60606e;
+    margin-top: 6px;
+    padding: 14px 20px;
+    background: #f8f9fc;
+    border-left: 3px solid #467998;
+    display: inline-block;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ================================================================
+   PROJECT MODAL
+   ================================================================ */
+
+.project-card{
+    cursor:pointer;
+    transition:transform .3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+}
+
+/* ---------- BACKDROP ---------- */
+
+.project-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:10000;
+    background:rgba(8,12,20,.85);
+    backdrop-filter:blur(8px);
+    overflow-y:auto;
+    padding:20px;
+}
+
+.project-modal.show{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/* ---------- MODAL CARD ---------- */
+
+.project-modal-content{
+    background:#fff;
+    width:95%;
+    max-width:1400px;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 25px 80px rgba(0,0,0,.35);
+    margin:auto;
+}
+
+/* ---------- CLOSE BUTTON ---------- */
+
+.close-project-modal{
+    position:absolute;
+    top:16px;
+    right:16px;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    backdrop-filter:blur(6px);
+}
+
+.close-project-modal:hover{
+    background:rgba(0,0,0,.7);
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+
+.modal-project-body{
+    display:grid;
+    grid-template-columns:58% 42%;
+    min-height:750px;
+}
+
+/* ================================================================
+   LEFT SIDE - SCREENSHOTS
+   ================================================================ */
+
+.project-modal-image{
+    position:relative;
+    background:#0f172a;
+    min-height:750px;
+    border-right:1px solid #e5e7eb;
+}
+
+.carousel-wrapper{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+.carousel-track{
+    display:flex;
+    height:100%;
+    transition:transform .45s ease;
+}
+
+.carousel-slide{
+    flex:0 0 100%;
+    width:100%;
+    height:100%;
+}
+
+.carousel-slide img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    padding:20px;
+    background:#0f172a;
+}
+
+/* Counter */
+
+.carousel-counter{
+    position:absolute;
+    top:18px;
+    left:18px;
+    z-index:10;
+    background:rgba(0,0,0,.55);
+    color:#fff;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    backdrop-filter:blur(6px);
+}
+
+/* Arrows */
+
+.carousel-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    cursor:pointer;
+    z-index:10;
+    font-size:18px;
+    backdrop-filter:blur(6px);
+}
+
+.carousel-arrow:hover{
+    background:rgba(255,255,255,.25);
+}
+
+.carousel-prev{
+    left:20px;
+}
+
+.carousel-next{
+    right:20px;
+}
+
+/* Dots */
+
+.carousel-dots{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:8px;
+    z-index:10;
+}
+
+.carousel-dot{
+    width:8px;
+    height:8px;
+    border:none;
+    border-radius:999px;
+    background:rgba(255,255,255,.4);
+    transition:.3s;
+}
+
+.carousel-dot.active{
+    width:24px;
+    background:#fff;
+}
+
+/* ================================================================
+   RIGHT SIDE - CONTENT
+   ================================================================ */
+
+.project-modal-details{
+    padding:40px;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.modal-project-tag{
+    display:inline-flex;
+    align-self:flex-start;
+    padding:6px 14px;
+    border-radius:999px;
+    background:#eff6ff;
+    color:#2563eb;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:16px;
+}
+
+.project-modal-details h2{
+    font-family:'Playfair Display', serif;
+    font-size:38px;
+    line-height:1.2;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.project-description{
+    font-size:15px;
+    line-height:1.9;
+    color:#4b5563;
+    margin-bottom:24px;
+}
+
+/* ---------- CONTENT CARDS ---------- */
+
+.project-technologies,
+.project-highlights{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:20px;
+    margin-bottom:18px;
+}
+
+.project-technologies h4,
+.project-highlights h4{
+    margin:0 0 14px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#111827;
+}
+
+.project-technologies h4:before,
+.project-highlights h4:before{
+    display:none;
+}
+
+/* ---------- TECH TAGS ---------- */
+
+.tech-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech-tag{
+    background:#eff6ff;
+    color:#2563eb;
+    border:1px solid #bfdbfe;
+    padding:7px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* ---------- FEATURES ---------- */
+
+.project-highlights ul{
+    margin:0;
+    padding-left:18px;
+}
+
+.project-highlights li{
+    color:#4b5563;
+    line-height:1.8;
+    margin-bottom:8px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.project-links{
+    display:flex;
+    gap:14px;
+    margin-top:auto;
+    padding-top:10px;
+}
+
+.btn-project-github,
+.btn-project-link{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.25s;
+}
+
+.btn-project-github{
+    background:#111827;
+    color:#fff;
+}
+
+.btn-project-github:hover{
+    background:#000;
+    color:#fff;
+}
+
+.btn-project-link{
+    background:#467998;
+    color:#fff;
+}
+
+.btn-project-link:hover{
+    background:#355d78;
+    color:#fff;
+}
+
+/* ================================================================
+   RESPONSIVE
+   ================================================================ */
+
+@media(max-width:992px){
+
+    .modal-project-body{
+        grid-template-columns:1fr;
+    }
+
+    .project-modal-image{
+        min-height:450px;
+        border-right:none;
+        border-bottom:1px solid #e5e7eb;
+    }
+
+    .project-modal-details{
+        padding:28px;
+    }
+
+    .project-modal-details h2{
+        font-size:30px;
+    }
+}
+
+@media(max-width:768px){
+
+    .project-modal{
+        padding:10px;
+    }
+
+    .project-modal-content{
+        width:100%;
+    }
+
+    .project-modal-image{
+        min-height:320px;
+    }
+
+    .project-modal-details{
+        padding:22px;
+    }
+
+    .project-modal-details h2{
+        font-size:24px;
+    }
+
+    .project-links{
+        flex-direction:column;
+    }
+
+    .btn-project-github,
+    .btn-project-link{
+        width:100%;
+    }
+}
+
 
 /* contact
 ==================================================*/
