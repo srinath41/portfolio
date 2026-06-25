@@ -172,7 +172,7 @@ const projectsData = {
             'img/portfolio/PMSystem2.png',
             'img/portfolio/PMSystem3.png',
             'img/portfolio/PMSystem4.png',
-            'img/portfolio/PMSystem.png',
+            'img/portfolio/PMsystem.png',
             'img/portfolio/PMSystem5.png',
             'img/portfolio/PMSystem6.png',
             'img/portfolio/PMSystem7.png',
