@@ -119,6 +119,7 @@ const projectsData = {
         tag: 'Full Stack · AI',
         // Add real screenshot paths to the screenshots array; fallback to single
         screenshots: [
+           'img/portfolio/inspectra-1.png', 
             'img/portfolio/inspectra.png',
             'img/portfolio/inspectra-2.png',
             'img/portfolio/inspectra-3.png'
