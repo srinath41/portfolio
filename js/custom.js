@@ -169,10 +169,10 @@ const projectsData = {
         title: 'Team Project Management System',
         tag: 'Full Stack · Web',
         screenshots: [
-            // 'img/portfolio/PMsystem.png',
             'img/portfolio/PMsystem2.png',
             'img/portfolio/PMsystem3.png',
             'img/portfolio/PMsystem4.png',
+            'img/portfolio/PMsystem.png',
             'img/portfolio/PMsystem5.png',
             'img/portfolio/PMsystem6.png',
             'img/portfolio/PMsystem7.png',
